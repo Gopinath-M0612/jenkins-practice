@@ -4,6 +4,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building the app...'
+                echo 'test trigger'
             }
         }
         stage('Test') {
@@ -15,11 +16,6 @@ pipeline {
             steps {
                 echo 'Deploying the app...'
             }
-        stage('build Trigger') {
-            steps {
-                echo 'Build is triggering...'
-            }
         }
     }
-}
 }
